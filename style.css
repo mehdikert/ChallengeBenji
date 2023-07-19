@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'gta';
+    src: url(font/pricedown\ bl.otf);
+}
+
+body {
+    background: url(https://images8.alphacoders.com/587/587534.jpg) no-repeat;
+    /*background-position: 0px -120px;
+    */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+h1 {
+    font-family: 'gta';
+    font-size: 3.5rem;
+    color: white;
+}
+
+.contenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.container:hover {
+    transform: scale(1.05);
+
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star:hover {
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+
+
+.YellowStar {
+    fill: rgb(226, 180, 30);
+}
+
+.WhiteStar {
+    fill: rgb(255, 255, 255);
+}
